@@ -1,0 +1,17 @@
+name: My Workflow
+
+
+on:
+ push:
+   branches: [ main ]
+
+
+jobs:
+  myJob:
+    runs-on: ubuntu-latest
+
+
+    steps:
+        - name: GreetEveryone
+          run: echo "Hello World"
+        
